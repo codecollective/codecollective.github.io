@@ -1,10 +1,8 @@
- $(document).ready( function() {
-
+$(window).load(function){
    $('.pageblock').css('min-height', $(window).height()+'px');
+})
 
-
-
-
+$(document).ready( function() {
    $(".next-block").click(function() {
      console.log('click');
      var i = $(this).closest(".pageblock").index()+1;
