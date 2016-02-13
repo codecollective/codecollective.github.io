@@ -1,0 +1,85 @@
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.container{
+  padding-left: 0px;
+   padding-right: 0px;
+}
+.pageblock{
+height:100%;
+
+}
+
+.orange{
+background-color: #F26322;
+}
+.gray{
+  background-color: #5B5C5C;
+}
+.white{
+  background-color: #fff;
+}
+
+.orange .content{
+color:#fff;
+}
+.orange .content a, .orange .content a:hover{
+  color:#fff;
+  text-decoration: underline;
+}
+.gray .content{
+    color:#fff;
+}
+.gray .content a, .gray .content a:hover{
+  color:#fff;
+  text-decoration: underline;
+}
+.white .content{
+  color:#464748;
+}
+.white .content a, .white .content a:hover{
+  color:#464748;
+  text-decoration: underline;
+}
+.nr{
+  font-size:170px;
+  font-weight: bold;
+  text-align: center;
+}
+.text{
+  padding-top:41px;
+  padding-bottom:41px;
+}
+.text h1{
+  font-size:70px;
+}
+.text, .text p{
+  font-size:20px;
+}
+.next-block-gray, .next-block-white{
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height:200px;
+}
+.next-block-gray{
+  background-image: url("../img/arrow_gr.png");
+}
+.next-block-white{
+  background-image: url("../img/arrow_wh.png");
+}
+@keyframes arrow {
+    50%   {top:30px;height:65px;}
+    100% {top:0px; height:70px;}
+}
+
+.next-block{
+  top:0px;
+  height:70px;
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.7,.5,.2,.68);
+}
