@@ -9,10 +9,8 @@ $(document).ready( function() {
        scrollTop: $(".pageblock:nth-child("+(i+1)+")").offset().top
      }, 600);
    });
-
  })
 
-
- $(window).on('resize', function(){
-    $('.pageblock').css('height', $(window).height()+'px');
+ $(window).resize(function() {
+   $('.pageblock').css('min-height', $(window).height()+'px');
  })
