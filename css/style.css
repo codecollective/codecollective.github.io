@@ -71,8 +71,8 @@ color:#fff;
   background-image: url("../img/arrow_wh.png");
 }
 @keyframes arrow {
-    50%   {top:30px;height:65px;}
-    100% {top:0px; height:70px;}
+    50%   {top:30px;}
+    100% {top:0px;}
 }
 
 .next-block{
